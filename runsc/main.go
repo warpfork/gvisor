@@ -57,7 +57,7 @@ var (
 	// Flags that control sandbox runtime behavior.
 	platform   = flag.String("platform", "ptrace", "specifies which platform to use: ptrace (default), kvm")
 	network    = flag.String("network", "sandbox", "specifies which network to use: sandbox (default), host, none. Using network inside the sandbox is more secure because it's isolated from the host network.")
-	fileAccess = flag.String("file-access", "proxy", "specifies which filesystem to use: proxy (default), direct. Using a proxy is more secure because it disallows the sandbox from opennig files directly in the host.")
+	fileAccess = flag.String("file-access", "proxy", "specifies which filesystem to use: proxy (default), direct. Using a proxy is more secure because it disallows the sandbox from opening files directly in the host.")
 	overlay    = flag.Bool("overlay", false, "wrap filesystem mounts with writable overlay. All modifications are stored in memory inside the sandbox.")
 )
 
